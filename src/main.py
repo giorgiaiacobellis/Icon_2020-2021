@@ -67,10 +67,11 @@ def getUserMovie(choice):
 #funzione del menu principale
 def menu():
     print("Benvenuto in MovieLand!")
-    choice = input("Scegli come proseguire: \n 1. Scopri il genere di un film o serie TV\n 2. Lasciati suggerire un nuovo film sulla base di un altro che hai apprezzato \n --> ")
-    while (int(choice) != 1 and int(choice) != 2):
+    choice = input("Scegli come proseguire: \n 1. Scopri il genere di un film o serie TV\n 2. Lasciati suggerire un nuovo film sulla base di un altro che hai apprezzato \n 3. Interroga il sistema \n 4. Esci\n --> ")
+    while (int(choice) != 1 and int(choice) != 2 and int(choice) != 3 and int(choice) != 4):
         choice = input("Inserisci un'opzione valida --> ")
     return int(choice)
+
 
 #funzione calcolo range anno di rilascio
 def releaseYear(year):
@@ -103,21 +104,28 @@ def releaseYear(year):
 def main():
     #preprocessing dei dati
     #prep.main()
-    
-    #menu
-    choice = menu()
-    print('INIZIAMO! \n')
-    userMovie = getUserMovie(choice)
-    if choice == 1:
-        #classificazione genere
-        clf.main(userMovie)
-    else:
-        #recommender system
-        clust.main(userMovie)
+    choice = 0
+    while choice!=4:
+        #menu
+        choice = menu()
         
-    #interrogazione della base di conoscenza sul film
-    print('INTERROGA IL SISTEMA!\n')
-    kb.mainFunz()
-    
+        if choice == 1:
+            print('INIZIAMO! \n')
+            userMovie = getUserMovie(choice)
+            #classificazione genere
+            clf.main(userMovie)
+        if choice == 2:
+            print('INIZIAMO! \n')
+            userMovie = getUserMovie(choice)
+            #recommender system
+            clust.main(userMovie)
+        if choice == 3:
+            print('INIZIAMO! \n')
+            #interrogazione della base di conoscenza sul film
+            kb.mainFunz()
+        if choice == 4:
+            print('Uscita..\n')
+            break
+ 
 if __name__ == "__main__":
     main()
