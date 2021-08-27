@@ -1,0 +1,103 @@
+# Tuning degli iperparametri per la metrica accuracy 
+
+Miglior combinazione di parametri ritrovata:
+
+{'C': 1.0, 'gamma': 'auto', 'kernel': 'rbf', 'probability': True}
+
+Classification report:
+
+Il modello è stato addestrato sul training set completo.
+
+Le metriche sono state calcolate sul test set.
+
+              precision    recall  f1-score   support
+
+       anime       1.00      1.00      1.00       360
+        cult       1.00      1.00      1.00       360
+     fantasy       1.00      1.00      1.00       380
+      action       1.00      1.00      1.00       342
+ documentary       1.00      0.94      0.97       346
+      nature       1.00      1.00      1.00       360
+    romantic       1.00      0.99      0.99       344
+       sport       1.00      0.77      0.87       352
+   thrillers       1.00      0.65      0.79       377
+        kids       1.00      0.99      0.99       363
+      dramas       0.46      1.00      0.63       351
+      horror       1.00      1.00      1.00       377
+     standup       1.00      0.90      0.95       356
+   commedies       1.00      0.68      0.81       355
+     musical       1.00      0.93      0.97       382
+
+    accuracy                           0.92      5405
+   macro avg       0.96      0.92      0.93      5405
+weighted avg       0.96      0.92      0.93      5405
+
+
+# Tuning degli iperparametri per la metrica precision 
+
+Miglior combinazione di parametri ritrovata:
+
+{'C': 1.0, 'gamma': 'auto', 'kernel': 'rbf', 'probability': True}
+
+Classification report:
+
+Il modello è stato addestrato sul training set completo.
+
+Le metriche sono state calcolate sul test set.
+
+              precision    recall  f1-score   support
+
+       anime       1.00      1.00      1.00       360
+        cult       1.00      1.00      1.00       360
+     fantasy       1.00      1.00      1.00       380
+      action       1.00      1.00      1.00       342
+ documentary       1.00      0.94      0.97       346
+      nature       1.00      1.00      1.00       360
+    romantic       1.00      0.99      0.99       344
+       sport       1.00      0.77      0.87       352
+   thrillers       1.00      0.65      0.79       377
+        kids       1.00      0.99      0.99       363
+      dramas       0.46      1.00      0.63       351
+      horror       1.00      1.00      1.00       377
+     standup       1.00      0.90      0.95       356
+   commedies       1.00      0.68      0.81       355
+     musical       1.00      0.93      0.97       382
+
+    accuracy                           0.92      5405
+   macro avg       0.96      0.92      0.93      5405
+weighted avg       0.96      0.92      0.93      5405
+
+
+# Tuning degli iperparametri per la metrica recall 
+
+Miglior combinazione di parametri ritrovata:
+
+{'C': 1.0, 'gamma': 'auto', 'kernel': 'rbf', 'probability': True}
+
+Classification report:
+
+Il modello è stato addestrato sul training set completo.
+
+Le metriche sono state calcolate sul test set.
+
+              precision    recall  f1-score   support
+
+       anime       1.00      1.00      1.00       360
+        cult       1.00      1.00      1.00       360
+     fantasy       1.00      1.00      1.00       380
+      action       1.00      1.00      1.00       342
+ documentary       1.00      0.94      0.97       346
+      nature       1.00      1.00      1.00       360
+    romantic       1.00      0.99      0.99       344
+       sport       1.00      0.77      0.87       352
+   thrillers       1.00      0.65      0.79       377
+        kids       1.00      0.99      0.99       363
+      dramas       0.46      1.00      0.63       351
+      horror       1.00      1.00      1.00       377
+     standup       1.00      0.90      0.95       356
+   commedies       1.00      0.68      0.81       355
+     musical       1.00      0.93      0.97       382
+
+    accuracy                           0.92      5405
+   macro avg       0.96      0.92      0.93      5405
+weighted avg       0.96      0.92      0.93      5405

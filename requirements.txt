@@ -1,0 +1,10 @@
+numpy
+pandas
+matplotlib
+kmodes
+fuzzywuzzy
+scikit-learn
+sklearn
+imblearn.over_sampling
+sys
+imbalanced-learn

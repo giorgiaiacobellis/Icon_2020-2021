@@ -1,0 +1,107 @@
+# Tuning degli iperparametri per la metrica accuracy 
+
+Miglior combinazione di parametri ritrovata:
+
+{'metric': 'manhattan', 'n_neighbors': 1, 'weights': 'uniform'}
+Classification report:
+
+Il modello è stato addestrato sul training set completo
+
+
+ Le metriche sono state calcolate sul test set.
+
+
+              precision    recall  f1-score   support
+
+       anime       1.00      1.00      1.00       327
+        cult       0.99      1.00      0.99       347
+     fantasy       0.99      1.00      0.99       374
+      action       0.90      0.98      0.94       334
+ documentary       0.92      0.91      0.91       345
+      nature       0.97      1.00      0.98       316
+    romantic       0.94      0.99      0.96       371
+       sport       0.75      0.74      0.74       322
+   thrillers       0.79      0.73      0.76       320
+        kids       0.95      1.00      0.98       365
+      dramas       0.56      0.31      0.40       320
+      horror       0.94      1.00      0.97       328
+     standup       0.91      0.98      0.94       330
+   commedies       0.73      0.74      0.73       330
+     musical       0.87      0.97      0.91       320
+
+    accuracy                           0.89      5049
+   macro avg       0.88      0.89      0.88      5049
+weighted avg       0.88      0.89      0.89      5049
+
+
+# Tuning degli iperparametri per la metrica precision 
+
+Miglior combinazione di parametri ritrovata:
+
+{'metric': 'manhattan', 'n_neighbors': 1, 'weights': 'uniform'}
+Classification report:
+
+Il modello è stato addestrato sul training set completo
+
+
+ Le metriche sono state calcolate sul test set.
+
+
+              precision    recall  f1-score   support
+
+       anime       1.00      1.00      1.00       327
+        cult       0.99      1.00      0.99       347
+     fantasy       0.99      1.00      0.99       374
+      action       0.90      0.98      0.94       334
+ documentary       0.92      0.91      0.91       345
+      nature       0.97      1.00      0.98       316
+    romantic       0.94      0.99      0.96       371
+       sport       0.75      0.74      0.74       322
+   thrillers       0.79      0.73      0.76       320
+        kids       0.95      1.00      0.98       365
+      dramas       0.56      0.31      0.40       320
+      horror       0.94      1.00      0.97       328
+     standup       0.91      0.98      0.94       330
+   commedies       0.73      0.74      0.73       330
+     musical       0.87      0.97      0.91       320
+
+    accuracy                           0.89      5049
+   macro avg       0.88      0.89      0.88      5049
+weighted avg       0.88      0.89      0.89      5049
+
+
+# Tuning degli iperparametri per la metrica recall 
+
+Miglior combinazione di parametri ritrovata:
+
+{'metric': 'manhattan', 'n_neighbors': 1, 'weights': 'uniform'}
+Classification report:
+
+Il modello è stato addestrato sul training set completo
+
+
+ Le metriche sono state calcolate sul test set.
+
+
+              precision    recall  f1-score   support
+
+       anime       1.00      1.00      1.00       327
+        cult       0.99      1.00      0.99       347
+     fantasy       0.99      1.00      0.99       374
+      action       0.90      0.98      0.94       334
+ documentary       0.92      0.91      0.91       345
+      nature       0.97      1.00      0.98       316
+    romantic       0.94      0.99      0.96       371
+       sport       0.75      0.74      0.74       322
+   thrillers       0.79      0.73      0.76       320
+        kids       0.95      1.00      0.98       365
+      dramas       0.56      0.31      0.40       320
+      horror       0.94      1.00      0.97       328
+     standup       0.91      0.98      0.94       330
+   commedies       0.73      0.74      0.73       330
+     musical       0.87      0.97      0.91       320
+
+    accuracy                           0.89      5049
+   macro avg       0.88      0.89      0.88      5049
+weighted avg       0.88      0.89      0.89      5049
+

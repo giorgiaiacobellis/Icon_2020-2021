@@ -1,0 +1,103 @@
+# Tuning iperparametri per la metrica accuracy 
+
+Miglior combinazione di parametri ritrovata:
+
+{'n_estimators': 1000}
+
+Classification report:
+
+Il modello è stato addestrato sul training set completo.
+
+Le metriche sono state calcolate sul test set.
+
+              precision    recall  f1-score   support
+
+       anime       1.00      1.00      1.00       360
+        cult       0.97      1.00      0.98       360
+     fantasy       0.97      1.00      0.99       380
+      action       0.92      1.00      0.96       342
+ documentary       0.88      0.96      0.92       346
+      nature       0.96      1.00      0.98       360
+    romantic       0.92      0.99      0.95       344
+       sport       0.71      0.81      0.76       352
+   thrillers       0.75      0.70      0.72       377
+        kids       0.92      0.99      0.95       363
+      dramas       0.55      0.26      0.36       351
+      horror       0.96      1.00      0.98       377
+     standup       0.97      0.94      0.95       356
+   commedies       0.80      0.73      0.77       355
+     musical       0.87      0.95      0.91       382
+
+    accuracy                           0.89      5405
+   macro avg       0.88      0.89      0.88      5405
+weighted avg       0.88      0.89      0.88      5405
+
+
+# Tuning iperparametri per la metrica precision 
+
+Miglior combinazione di parametri ritrovata:
+
+{'n_estimators': 10}
+
+Classification report:
+
+Il modello è stato addestrato sul training set completo.
+
+Le metriche sono state calcolate sul test set.
+
+              precision    recall  f1-score   support
+
+       anime       1.00      1.00      1.00       360
+        cult       0.96      1.00      0.98       360
+     fantasy       0.96      1.00      0.98       380
+      action       0.90      1.00      0.95       342
+ documentary       0.83      0.97      0.90       346
+      nature       0.92      1.00      0.96       360
+    romantic       0.91      0.99      0.95       344
+       sport       0.72      0.82      0.77       352
+   thrillers       0.76      0.69      0.72       377
+        kids       0.91      0.99      0.95       363
+      dramas       0.60      0.23      0.33       351
+      horror       0.96      1.00      0.98       377
+     standup       0.97      0.94      0.95       356
+   commedies       0.82      0.70      0.76       355
+     musical       0.87      0.93      0.90       382
+
+    accuracy                           0.89      5405
+   macro avg       0.87      0.88      0.87      5405
+weighted avg       0.87      0.89      0.87      5405
+
+
+# Tuning iperparametri per la metrica recall 
+
+Miglior combinazione di parametri ritrovata:
+
+{'n_estimators': 10}
+
+Classification report:
+
+Il modello è stato addestrato sul training set completo.
+
+Le metriche sono state calcolate sul test set.
+
+              precision    recall  f1-score   support
+
+       anime       1.00      1.00      1.00       360
+        cult       0.97      1.00      0.98       360
+     fantasy       0.96      1.00      0.98       380
+      action       0.89      1.00      0.94       342
+ documentary       0.82      0.95      0.88       346
+      nature       0.94      1.00      0.97       360
+    romantic       0.91      0.99      0.95       344
+       sport       0.69      0.81      0.74       352
+   thrillers       0.76      0.68      0.72       377
+        kids       0.89      0.99      0.94       363
+      dramas       0.59      0.24      0.34       351
+      horror       0.96      1.00      0.98       377
+     standup       0.97      0.94      0.96       356
+   commedies       0.85      0.70      0.77       355
+     musical       0.90      0.95      0.92       382
+
+    accuracy                           0.88      5405
+   macro avg       0.87      0.88      0.87      5405
+weighted avg       0.87      0.88      0.87      5405
