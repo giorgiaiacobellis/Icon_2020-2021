@@ -2,6 +2,7 @@
 L'editor di testo utilizzato per sviluppare il progetto è stato Spyder(anaconda3).
 
 Repository: 
+
 *src* : contiene tutti i file sorgente relativi al caso di studio. Per l'avvio usare 'main.py'.
 
 *datasets* : contiene tutti i dataset in formato CSV utilizzati nel progetto.
