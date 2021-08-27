@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 # Inizio KB
 # Lettura csv
-movieDataString = pd.read_csv('../datasets/categ_complete_dataset.csv', sep=',')
+movieDataString = pd.read_csv(r'..\datasets\categ_complete_dataset.csv', sep=',')
 
 #Creazione delle liste per ogni singola colonna
 type = movieDataString.loc[:,'type']

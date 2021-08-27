@@ -559,7 +559,7 @@ def predictionGenre(filename,userInput,prepElement):
 
 def main(userMovie):
     
-    df = pd.read_csv('../datasets/categ_complete_dataset.csv',sep=',')
+    df = pd.read_csv(r'..\datasets\categ_complete_dataset.csv',sep=',')
         
     prepInfo=prepDataset(df)
 
@@ -576,7 +576,7 @@ def main(userMovie):
     #finalClassification(prepInfo.X_train_complete,prepInfo.y_train_complete)
     
     #predizione del genere del file dato dall'utente
-    result= predictionGenre("finalized_knn.sav",userMovie,prepInfo)#user movie dovrebbe essere globale nel main
+    result= predictionGenre(r"finalized_knn.sav",userMovie,prepInfo)#user movie dovrebbe essere globale nel main
     print('Il genere del film o serie TV da te inserito è %s \n' % result)
 
        

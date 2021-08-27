@@ -107,7 +107,7 @@ class HandlePrint():
 
 
 def main(userMovie):
-    df = pd.read_csv('../datasets/categ_complete_dataset.csv', sep=',')
+    df = pd.read_csv(r'..\datasets\categ_complete_dataset.csv', sep=',')
     df = dataOperations(df)
     #KChoice(df)
     

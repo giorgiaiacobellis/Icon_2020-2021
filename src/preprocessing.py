@@ -152,9 +152,9 @@ def inverseGenre(row,dictionary):
 
 def main():
     #lettura e creazione dataframe dei due dataset
-    movieData1 = pd.read_csv('../datasets/1_Netflix_Movie.csv', sep=',')
-    movieData2 = pd.read_csv('../datasets/2_Netflix_Movie.csv', sep=',')
-    movieRatings = pd.read_csv('../datasets/IMDb_rating.csv', sep=',')
+    movieData1 = pd.read_csv(r'..\datasets\1_Netflix_Movie.csv', sep=',')
+    movieData2 = pd.read_csv(r'..\datasets\2_Netflix_Movie.csv', sep=',')
+    movieRatings = pd.read_csv(r'..\datasets\IMDb_rating.csv', sep=',')
     #eliminazione features superflue
     movieData1 = movieData1.drop(columns = ['rating','date_added', 'id'])
     movieData2 = movieData2.drop(columns = ['enter_in_netflix', 'id'])
@@ -360,7 +360,7 @@ def main():
     df['genre']=movieData.apply(lambda row: inverseGenre(row,dictGenre),axis=1)
     df['ratings'] = movieData['ratings']
     df= df.dropna(subset=['director','country','description'])
-    df.to_csv('../datasets/categ_complete_dataset.csv', index = False)
+    df.to_csv(r'..\datasets\categ_complete_dataset.csv', index = False)
     return df
 
 if __name__ == "__main__":

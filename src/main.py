@@ -57,8 +57,8 @@ def getUserMovie(choice):
         elif (genreM == '15'):
             genreM = 'thrillers' 
         else:
-            while (not 1 <= genreM <= 15):
-                genreM = input("Perfavore, inserisci un numero corretto.") 
+            while (not 1 <= int(genreM) <= 15):
+                genreM = input("Perfavore, inserisci un numero corretto.\n") 
     data = {'type':[typeM], 'title':[title],'duration':[duration],'director':[direc],'cast':[cast],'country':[country], 'year_range':[yr], 'ratings':[rating],'genre': [genreM],'description':[description]}
     userMovieDF = pd.DataFrame(data)
     return userMovieDF
